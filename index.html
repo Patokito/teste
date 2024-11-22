@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML5 Básico - dev quest</title>
+
+    <link rel="stylesheet" href="./src/css/estilos.css">
+</head>
+
+<body>
+    <header class="cabecalho"></header>
+
+    <main class="corpinho">
+        <section class="titulos-paragrafos">
+            <h1>titulo e paragrafo</h1>
+            <h1>título nivel 1 (h1)</h1>
+            <h2>título nivel 2 (h2)</h2>
+            <h3>título nivel 3 (h3)</h3>
+            <h4>título nivel 4 (h4)</h4>
+            <h5>título nivel 5 (h5)</h5>
+            <h6>título nivel 6 (h6)</h6>
+            <p>paragrafo (p)</p>
+        </section>
+
+        <section class="formatacao-de-texto">
+            <h1>formatação de texto</h1>
+            <p>isto é uma <strong>tag de texto importante</strong> (strong)</p>
+            <p>isto é uma tag de <b>negrito</b> (b)</p>
+            <p>isto é uma tag de <i>italico</i> (i)</p>
+            <p>isto é uma tag de <u>sublinhado</u> (u)</p>
+            <p>isto é uma tag de <s>riscado</s> (s)</p>
+        </section>
+
+        <!-- isso é um comentario, ctrl + ; -->
+
+        <section class="links-externos-internos">
+            <h1>links externos e internos</h1>
+            <ul>
+                <li>
+                    <a href="https://placehold.co/?_gl=1*j97v43*_ga*MTA2NTAxMzA5My4xNzI4MzQzODQx*_ga_37GXT4VGQK*MTcyOTIwMTMyMi4xNC4xLjE3MjkyMDYwMTYuMC4wLjA."
+                        target="_blank" rel="noopener noreferrer">isso é um link externo, com a tag âncora (a) e um
+                        atributo target _blank para abrir o link em outra aba</a>
+                </li>
+                <li>
+                    <a href="#tabela">isso é um link interno, com a tag âncora (a) e o href com um id da propria pagina</a>
+                </li>
+                <li>
+                    o href tambem pode entender arquivos do projeto
+                </li>
+            </ul>
+        </section>
+
+        <section class="imagens">
+            <h1>imagem</h1>
+            <img src="./src/img/imagem-da-tag-img.png" alt="imagem" title="imagem">
+            <p>obs 1.: o atributo alt, para caso a imagem de algum erro, o alt é uma explicação do que tem na imagem,
+                abaixo há uma imagem com erro com o atributo atl = imagem</p>
+            <img src="./src/img/imagem-erro.png" alt="imagem com erro" title="imagem com erro">
+            <p>obs 2.: o atributo title, é pra quando o mouse fica parado na imagem, falara uma descrição dela</p>
+        </section>
+
+        <section class="listas">
+            <h1>listas ordenadas e não ordenadas</h1>
+            <p>ul>li* número de itens que a lista vai ter</p>
+            <ul>
+                <li>
+                    isso
+                </li>
+                <li>
+                    é
+                </li>
+                <li>
+                    uma
+                </li>
+                <li>
+                    lista
+                </li>
+                <li>
+                    não
+                </li>
+                <li>
+                    ordenada
+                </li>
+                <li>
+                    com
+                </li>
+                <li>
+                    a
+                </li>
+                <li>
+                    tag
+                </li>
+                <li>
+                    ul
+                </li>
+            </ul>
+
+            <ol>
+                <li>
+                    isso
+                </li>
+                <li>
+                    é
+                </li>
+                <li>
+                    uma
+                </li>
+                <li>
+                    lista
+                </li>
+                <li>
+                    ordenada
+                </li>
+                <li>
+                    com
+                </li>
+                <li>
+                    a
+                </li>
+                <li>
+                    tag
+                </li>
+                <li>
+                    ol
+                </li>
+            </ol>
+        </section>
+
+        <section class="tabela" id="tabela">
+            <h1>tabela</h1>
+
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Produto</th>
+                        <th>Quantidade</th>
+                        <th>Preço</th>
+                        <th>Black friday</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <!-- <td colspan="2">Produto 1</td> -->
+                        <td>Produto 1</td>
+                        <td>2</td>
+                        <td>50 reais</td>
+                        <td rowspan="2">Sim</td>
+                    </tr>
+                    <tr>
+                        <td>Produto 2</td>
+                        <td>5</td>
+                        <td>10 reais</td>
+                        <!-- <td>Sim</td> -->
+                    </tr>
+                    <tr>
+                        <td>Produto 3</td>
+                        <td>3</td>
+                        <td>15 reais</td>
+                        <td>Não</td>
+                    </tr>
+                </tbody>
+
+                <tfoot>
+                    <tr>
+                        <td colspan="3">Total</td>
+                        <td>75 reais</td>
+                    </tr>
+                </tfoot>
+            </table>
+
+        </section>
+    </main>
+</body>
+
+</html>
